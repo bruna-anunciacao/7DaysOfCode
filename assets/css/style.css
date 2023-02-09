@@ -1,200 +1,79 @@
+:root {
+    --txt-color: #667085;
+    --red-color: #8E2424;
+    --gray-color: #101828;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
-.NavBar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 1440px;
-    height: 80px;
-    background: #FFFFFF;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+body {
+    width: 100%;
+    height: 100vh;
 }
 
-.header {
-    width: 1440px;
-    height: 80px;
+nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    padding: 1rem 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 32px;
-    width: 1280px;
-    height: 44px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.content a {
+    color: var(--txt-color);
+    text-decoration: none;
+    margin-right: 2rem;
 }
 
-.button-base {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: 148px;
-    height: 26.99px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.button-base img {
-    width: 27px;
-    height: 26.99px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.button-base h1 {
-    width: 113px;
-    height: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #3A404E;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.content {
-    width: 362px;
-    height: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.navigation ul {
-    width: 362px;
-    height: 32px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 32px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.navigation ul li {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #667085;
-}
-
-.logo {
-    width: 142px;
-    height: 32px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-}
-
-.navigation-actions {
-    width: 207px;
-    height: 44px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-
-}
-
-.button-one {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    width: 83px;
-    height: 44px;
-    border-radius: 8px;
-}
-
-.entrar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 18px;
-    gap: 8px;
-    width: 83px;
-    height: 44px;
-    border-radius: 8px;
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
     border: none;
-    font-family: 'Inter';
-    font-style: normal;
+    border-radius: 0.5rem;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #667085;
     background: none;
+    color: var(--txt-color);
+    font-size: 0.9rem;
 }
 
-.button-two {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    width: 112px;
-    height: 44px;
-    border-radius: 8px;
+button#cadastrar {
+    background: var(--red-color);
+    color: #FFF;
 }
 
-.cadastrar {
-    box-sizing: border-box;
+.cabecalho {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 407px;
     align-items: center;
-    padding: 10px 18px;
-    gap: 8px;
-    width: 112px;
-    height: 44px;
-    background: #8E2424;
-    border: 1px solid #8E2424;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-    border-radius: 8px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
+    flex-direction: column;
 }
 
+.cabecalho span {
+    margin-top: 6rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--red-color);
+}
+
+.cabecalho h1 {
+    margin-top: 24px;
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--gray-color);
+}
+
+.cabecalho p {
+    width: 791px;
+    margin-top: 36px;
+    margin-bottom: 107px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: var(--txt-color);
+}
 
